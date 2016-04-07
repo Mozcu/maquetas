@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="La Re-evolución musical">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="images/favicon.png">
+
+    <title>Mozcu</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/ionicons.css" rel="stylesheet">
+    <link href="css/entypo.css" rel="stylesheet">
+    <link href="css/mozcu.css" rel="stylesheet">
+    <link href="css/layout.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,300,700italic,700,400italic,300italic,100italic|Roboto+Slab:400,300,100,700' rel='stylesheet' type='text/css'>
+
+    <!-- Just for debugging purposes. Don't actually copy this line! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head> 
+<body>
+
+    <!-- +++++++++++++++++HEADER FIJO+++++++++++++++++++++++++++++ 
+    ===========================================================-->
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-header col-xs-2 col-sm-2 col-md-2 col-lg-2">   
+          <a class="logomin pull-left visible-xs" href="#"><img src="images/logominB.jpg" alt="Mozcu"></a>  
+        <a class="navbar-brand pull-left" href="#"><img src="images/logo.png" alt="Mozcu">  </a>  
+     </div> 
+        
+        <div class="col-xs-9 col-sm-9 col-md-6 col-lg-6 buscador">
+          <form class="navbar-form navbar-left navbarBuscador" role="search">
+          <div class="input-group">
+            <input type="text" class="form-control inputBuscador" placeholder="Busca artistas, amigos, álbums, canciones, etc. ">
+            <span class="input-group-btn"><button type="submit" class="btn btn-default"><i class="glyphicon glyphicon-search"></i></button></span>
+          </div>
+        </form> 
+        </div> 
+          
+        <div class="visible-lg visible-md">  
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#">Ingresar</a></li>
+                <li><button class="btn btn-primary">Crear una cuenta</button></li>
+            </ul>
+        </div>
+        
+</nav>
+    
+<!--FIN DEL HEADER-->
+    
+
+<div class="container-fluid">    
+    <!--+++++++++++++++++++++SIDEBAR++++++++++++++++++++++++++++++
+    ===========================================================-->    
+         <div class="col-md-2 col-lg-2 sidebar hidden-xs hidden-sm" role="navigation">
+            <ul class="nav nav-pills nav-pills-stacked nav-sidebar">
+                <li><a href="#"><i class="glyphicon glyphicon-user"></i>Ingresar</a></li>
+                <li><a href="#"><i class="glyphicon glyphicon-headphones"></i>Discos</a></li>
+                <li class="sidebarInactive"><a href="#" ><i class="glyphicon glyphicon-th-list"></i>Compilados</a></li>
+                <li class="sidebarInactive"><a href="#"><i class="glyphicon glyphicon-pencil"></i>Reseñas</a></li>
+                <li><a href="#"><i class="glyphicon glyphicon-thumbs-up"></i>Acerca de Mozcu</a></li>
+                <li><a href="#"><i class="glyphicon glyphicon-th-large"></i>Más aplicaciones</a></li>
+            </ul>
+        </div>
+        
+      
+
+    <!--FIN DEL SIDEBAR-->
+    
+    <!--+++++++++++++++++++++COMIENZO DE LA HOMEPAGE+++++++++++++++++++
+    ===================================================================-->
+   <div class="homePage">
+       <div class="col-md-offset-2 col-md-10 col-lg-offset-2 col-lg-10">
+         
+           <div class="row center-block">
+               <h1>Sube tu álbum</h1>
+               <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <h3 class="subtituloUpload">Agrega los tracks del álbum</h3>
+                   <div class="uploadTemas center-block text-center">
+                        <i class="glyphicon glyphicon-cloud-upload"></i>
+                        <div class="btn btnUpload btn-default btn-lg center-block">+ Agregar tracks</div>
+                       <div class="temaSubido text-left">
+                           <i class="glyphicon glyphicon-move"></i>
+                            <a href="#" >La carne no está buena si queda recocida<i class="glyphicon glyphicon-pencil"></i><i class="glyphicon glyphicon-ok"></i></a>
+                           
+                           <i class="glyphicon glyphicon-remove pull-right"></i>
+                       </div>
+                    </div>   
+               </div>
+               <div class="uploadInfo col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                   <h3 class="subtituloUpload">Añade la información del álbum </h3>
+                   <div class="imgUpload col-md-2 col-lg-3">
+                       <i class="center-block text-center glyphicon glyphicon-picture"></i>
+                       <span class="text-center center-block">Arrastra la portada acá</span>
+                       <span class="text-center center-block">-o bien-</span>
+                       <div class="imgArchivoBtn">
+                           <span class="text-center center-block">Selecciona una imagen</span>
+                           <input type="file" class="imgArchivo">
+                           
+                       </div>
+                        
+                    
+                    </div>
+               
+               <div class="col-md-8 col-lg-9 titlDisco">
+                   <input class="form-control " type="text" placeholder="Título del álbum">
+                   <input class="form-control " type="text" placeholder="Nombre del artista o banda del álbum">
+                   <input placeholder="Año de publicación, ej: 2014" type="datetime" class="form-control">
+                   <textarea class="form-control" rows="8" placeholder="Información del álbum"></textarea>
+                   <input class="form-control" type="text" placeholder="Tags (separa los tags por una coma Ej:rock, pop, rap...)">
+               </div>
+      
+                   
+                </div>
+               <div class="uploadLicencias col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                   <h3>Selecciona una licencia</h3>
+                   <p>Creative Commons expresa la idea de "Algunos derechos reservados", quien la elija cree en algo distinto a los extremos de "todo" o "nada". Por medio de una licencia Creative Commons los creadores de contenido permiten a otros usuarios utilizar su trabajo y seguir produciendo música libre. <small class="text-primary">El material subido al Sitio se marcará con las iniciales CC, que no implica renuncia a la protección de la propiedad intelectual mediante Copyright, sino que se conceden ciertas libertades.</small> </p>
+<!--                   INICIO LICENCIA-->
+                   <div class="licencia licenciaSelect col-lg-5">
+                   <a href="#"><h4>Atribución (by)</h4></a>
+                   <div class="ccLicencia">
+                       <i class="entypo cc"></i>
+                       <i class="entypo cc-by"></i>
+                           
+                    </div>
+                   <p>Se permite cualquier explotación de la obra, incluyendo la explotación con fines comerciales y la creación de obras derivadas, la distribución de las cuales también está permitida sin ninguna restricción. <a href="http://creativecommons.org.ar/faq#p3-01" target="_blank">Esta licencia es una licencia libre según la Freedom Defined.</a></p>
+                   </div>
+<!--                   FIN LICENCIA--> 
+<!--                   INICIO LICENCIA-->
+                   <div class="licencia col-lg-5">
+                   <a href="#"><h4>Reconocimiento – Compartir Igual (by-sa)</h4></a>
+                   <div class="ccLicencia">
+                       <i class="entypo cc"></i>
+                       <i class="entypo cc-by"></i>
+                       <i class="entypo cc-sa"></i>
+                           
+                    </div>
+                   <p>Se permite el uso comercial de la obra y de las posibles obras derivadas, la distribución de las cuales se debe hacer con una licencia igual a la que regula la obra original.<a href="http://creativecommons.org.ar/faq#p3-01" target="_blank"> Esta licencia es una licencia libre según la Freedom Defined.</a></p>
+                   </div>
+<!--                   FIN LICENCIA-->
+<!--                   INICIO LICENCIA-->
+                   <div class="licencia col-lg-5">
+                   <a href="#"><h4>Atribución – No Comercial (by-nc)</h4></a>
+                   <div class="ccLicencia">
+                       <i class="entypo cc"></i>
+                       <i class="entypo cc-by"></i>
+                       <i class="entypo cc-nc"></i>
+                           
+                    </div>
+                   <p>Se permite la generación de obras derivadas siempre que no se haga con fines comerciales. Tampoco se puede utilizar la obra original con fines comerciales. Esta licencia no es una licencia libre.</p>
+                   </div>
+<!--                   FIN LICENCIA--> 
+                   
+<!--                   INICIO LICENCIA-->
+                   <div class="licencia col-lg-5">
+                   <a href="#"><h4>Atribución – No Comercial – Compartir Igual (by-nc-sa)</h4></a>
+                   <div class="ccLicencia">
+                       <i class="entypo cc"></i>
+                       <i class="entypo cc-by"></i>
+                       <i class="entypo cc-nc"></i>
+                       <i class="entypo cc-sa"></i>
+                           
+                    </div>
+                   <p>No se permite un uso comercial de la obra original ni de las posibles obras derivadas, la distribución de las cuales se debe hacer con una licencia igual a la que regula la obra original. Esta licencia no es una licencia libre.</p>
+                   </div>
+<!--                   FIN LICENCIA-->
+<!--                   INICIO LICENCIA-->
+                   <div class="licencia col-lg-5">
+                   <a href="#"><h4>Atribución – Sin Obra Derivada (by-nd)</h4></a>
+                   <div class="ccLicencia">
+                       <i class="entypo cc"></i>
+                       <i class="entypo cc-by"></i>
+                       <i class="entypo cc-nd"></i>
+                           
+                    </div>
+                   <p> Se permite el uso comercial de la obra pero no la generación de obras derivadas. Esta licencia no es una licencia libre.</p>
+                   </div>
+<!--                   FIN LICENCIA-->
+<!--                   INICIO LICENCIA-->
+                   <div class="licencia col-lg-5">
+                   <a href="#"><h4>Atribución – No Comercial – Sin Obra Derivada (by-nc-nd)</h4></a>
+                   <div class="ccLicencia">
+                       <i class="entypo cc"></i>
+                       <i class="entypo cc-by"></i>
+                       <i class="entypo cc-nc"></i>
+                       <i class="entypo cc-nd"></i>
+                           
+                    </div>
+                   <p> No se permite un uso comercial de la obra original ni la generación de obras derivadas. Esta licencia no es una licencia libre, y es la más cercana al derecho de autor tradicional.</p>
+                   </div>
+<!--                   FIN LICENCIA-->
+                   
+                   
+                </div>
+               <footer class="col-lg-10 publicarFooter">
+                   <button type="button" class="btn btn-success pull-right">Publicar</button>
+                    <button type="button" class="btn btn-default pull-right">Cancelar</button>   
+                
+               </footer>
+              
+               
+           </div>
+      
+               
+        </div><!--FIN DE CONTENIDO-->       
+               
+    </div> <!-- FIN DE HOMEPAGE-->              
+               
+</div> <!-- FIN CONTAINER FLUID -->
+        
+            
+    
+
+
+     <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/docs.min.js"></script>
+      <script src="js/mozcu.js"></script>
+    
+</body>
+</html>

@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="La Re-evolución musical">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="images/favicon.png">
+
+    <title>Mozcu</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/ionicons.css" rel="stylesheet">
+    <link href="css/entypo.css" rel="stylesheet">
+    <link href="css/mozcu.css" rel="stylesheet">
+    <link href="css/layout.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,300,700italic,700,400italic,300italic,100italic|Roboto+Slab:400,300,100,700' rel='stylesheet' type='text/css'>
+
+    <!-- Just for debugging purposes. Don't actually copy this line! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head> 
+<body>
+
+    <!-- +++++++++++++++++HEADER FIJO+++++++++++++++++++++++++++++ 
+    ===========================================================-->
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-header col-xs-2 col-sm-2 col-md-2 col-lg-2">   
+          <a class="logomin pull-left visible-xs" href="#"><img src="images/logominB.jpg" alt="Mozcu"></a>  
+        <a class="navbar-brand pull-left" href="#"><img src="images/logo.png" alt="Mozcu">  </a>  
+     </div> 
+        
+        <div class="col-xs-9 col-sm-9 col-md-6 col-lg-6 buscador">
+          <form class="navbar-form navbar-left navbarBuscador" role="search">
+          <div class="input-group">
+            <input type="text" class="form-control inputBuscador" placeholder="Busca artistas, amigos, álbums, canciones, etc. ">
+            <span class="input-group-btn"><button type="submit" class="btn btn-default"><i class="glyphicon glyphicon-search"></i></button></span>
+          </div>
+        </form> 
+        </div> 
+          
+        <div class="visible-lg visible-md">  
+            <ul class="nav navbar-nav navbar-right navBarIn">
+                <li><a href="#">Ingresar</a></li>
+                <li><button class="btn btn-primary">Crear una cuenta</button></li>
+            </ul>
+        </div>
+        
+</nav>
+    
+<!--FIN DEL HEADER-->
+    
+
+<div class="container-fluid">    
+    <!--+++++++++++++++++++++SIDEBAR++++++++++++++++++++++++++++++
+    ===========================================================-->    
+         <div class="col-md-2 col-lg-2 sidebar hidden-xs hidden-sm" role="navigation">
+            <ul class="nav nav-pills nav-pills-stacked nav-sidebar">
+                <li><a href="#"><i class="glyphicon glyphicon-user"></i>Ingresar</a></li>
+                <li><a href="#"><i class="glyphicon glyphicon-headphones"></i>Discos</a></li>
+                <li class="sidebarInactive"><a href="#" ><i class="glyphicon glyphicon-th-list"></i>Compilados</a></li>
+                <li class="sidebarInactive"><a href="#"><i class="glyphicon glyphicon-pencil"></i>Reseñas</a></li>
+                <li><a href="#"><i class="glyphicon glyphicon-thumbs-up"></i>Acerca de Mozcu</a></li>
+                <li><a href="#"><i class="glyphicon glyphicon-th-large"></i>Más aplicaciones</a></li>
+            </ul>
+        </div>
+        
+      
+
+    <!--FIN DEL SIDEBAR-->
+    
+    <!--+++++++++++++++++++++COMIENZO DE LA HOMEPAGE+++++++++++++++++++
+    ===================================================================-->
+   <div class="homePage">
+       <div class="col-md-offset-2 col-md-10 col-lg-offset-2 col-lg-10">
+           
+
+           
+           <div class="row headerDisco">
+               
+               <!--           BREADCRUM SOLO PARA MOBILES-->
+           <div class="row visible-xs visible-sm">
+                <div class="breadcrumDisco col-xs-12 col-sm-12">
+                    
+                    <a href="#" class="col-xs-10 col-sm-10 breadVolver"><i class="glyphicon glyphicon-chevron-left pull-left"></i>Viva Elástico</a>
+                
+                    <a href="#" class="col-xs-2 col-sm-2 visible-xs visible-sm"><p class="text-right"><i class="btnMasMobile ion-android-more "></i></p></a>
+                    
+                </div>
+               
+              
+           </div>
+           
+<!--           FIN DE BREADCRUM SOLO PARA MOBILES-->
+               
+               <div class="col-sm-3 col-md-2 col-lg-2">
+                    <a href="#" class="playPause text-center">   
+                        
+                        <i class="botonPLay glyphicon glyphicon-play"></i>
+                        <i class="glyphicon glyphicon-pause hidden"></i>
+                      
+                    </a>    
+                    <img src="images/dorado.jpg" alt="perfil" class="imgDisco center-block">
+               </div>
+               
+               <div class="col-xs-12 col-sm-8 col-md-6 col-lg-6 titlDisco">
+                    <h3 class="nombreDisco">Dinastía Scorpio</h3>
+                    <h4 class="nombreBanda">El mató a un policia motorizado</h4>
+                    <h5 class="nombreAlbumUser">Por<a href="#">Discos Laptra</a></h5>
+               </div>
+               
+               <div class="col-sm-2 col-md-2 col-lg-2 hidden-xs hidden-sm">
+                    <button type="button" class="btn btn-primary btn-block btnDescarga" data-toggle="modal" data-target=".mozcu-descarga-modal"><i class="glyphicon glyphicon-cloud-download"></i>Descargar</button>
+                </div>
+               
+               
+<!--                   INICIO MODAL DESCARGA-->
+                   
+                   <div class="modal fade mozcu-descarga-modal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                      <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                                    <h4 class="modal-title text-center">Descarga "El Álbum"</h4>
+                              </div>
+                              <div class="modal-body">
+                                <p class="text-center"> La cultura no tiene precio, tiene valor. Ahora tienes que demostrar el valor que tiene este álbum para ti.</p>
+                                <div class="row rowPagos">
+                                  <div class="col-xs-5 col-sm-5 col-md-5 col-lg-5"><label for="valor" class="control-label input-lg pull-right">US$</label></div>
+                                  <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 "><input type="number" class="form-control input-lg" id="valor"
+                                         placeholder="10"></div>
+                                </div>
+                                <small class="center-block text-center">*Recuerda que esta transacción se realiza libre de intermediarios, por lo tanto el 100% de lo que ingreses va a la cuenta del artista.</small>  
+                              </div>
+                              <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Cancelar</button>
+                                <button type="button" class="btn btn-success">Descargar</button>
+                                  
+                          </div>
+                            
+                        </div>
+                      </div>
+                    </div>
+                   
+<!--                   FIN MODDAL DESCARGA-->
+                
+               <div class="col-sm-2 col-md-2 col-lg-2 hidden-xs hidden-sm">
+                   <div class="btn-group btn-group-justified btngroupCompartir">
+                       <a href="#" class="btn btn-default btnCompartir"><i class="glyphicon glyphicon-heart-empty"></i></a>
+                       <a href="#" class="btn btn-default btnCompartir"><i class="glyphicon glyphicon-share"></i></a>
+                      
+                    </div>
+                   
+               </div>
+               
+<!--               INICIO MENU DE DISCO-->
+               
+               <div class="visible-sm visible-md visible-lg">
+                   <ul class="nav nav-pills navDisco col-sm-12 col-md-12 col-lg-12">
+                      <li><a href="#">Lista de temas</a></li>
+                      <li class="discoActive"><a href="#">Información</a></li>
+                      <li><a href="#">Comentarios</a></li>
+                      <li><a href="#">Similares</a></li>
+                    </ul>
+               
+               </div>
+               
+<!--               FIN MENU DISCO -->
+               
+               
+               
+<!--               INICIO MENU DISCO SOLO PARA MOBILES-->
+               <div class="visible-xs">
+                    <div class="btn-group btn-group-justified navDiscoMobile">
+                       <a href="#" class="btn btn-default"><i class="center-block glyphicon glyphicon-list"></i>Lista de temas</a>
+                       <a href="#" class="btn btn-default navDiscoMobileActive"><i class="center-block glyphicon glyphicon-book"></i>Información</a>
+                        <a href="#" class="btn btn-default"><i class="center-block glyphicon glyphicon-comment"></i>Comentarios</a>
+                        <a href="#" class="btn btn-default"><i class="center-block glyphicon glyphicon-th"></i>Similares</a>
+                      
+                    </div>
+               
+               </div>
+            
+                   
+           </div>
+         
+           <div class="row center-block">
+               <div class="infoDisco col-md-7 col-lg-8">
+                   <h3>Información</h3>
+                   <p class="infoDiscoParrafo">La Dinastía Scorpio es el último disco de El mató a un policía motorizado
+    credits
+    released 28 N   ovember 2012 
+
+    Producido por Eduardo Bergallo y El mató a un policía motorizado 
+    Grabado por Eduardo Bergallo en los estudios Ion de Buenos Aires, en marzo del año 2011. 
+    Sesiones de guitarras y voces, grabadas por Hernán Agrasar en el estudio Fuera del Tunel de Buenos Aires, en noviembre del año 2011. 
+    Sesiones de guitarras y percusiones, grabadas por José D'agostino en el estudio Molloko Vellocet de Buenos Aires, en septiembre de 2012 
+    Mezclado en el estudio Revolver, por Eduardo Bergallo con la asistencia de Pablo Nelken. 
+    Masterizado por Federico Fragala en Puro Mastering 
+    Arte de tapa y diseño por Santiago Barrionuevo 
+    Música, arte y arreglos de todas las canciones por El mató a un policía motorizado 
+    Todas las canciónes compuestas y escritas por Santiago Motorizado</p>
+                   <strong>Álbum publicado el 23/03/2014</strong>
+                   <div class="infoTags">
+                       <strong>Tags</strong>
+                       <a href="#" class="tag">#argentina</a>
+                       <a href="#" class="tag">#Buenos aires</a>
+                        <a href="#" class="tag">#hard rock</a>
+                       <a href="#" class="tag">#psyco</a>
+                       <a href="#" class="tag">#trance</a>
+                       <a href="#" class="tag">#industrial</a>
+                       <a href="#" class="tag">#postpunk</a>
+                       <a href="#" class="tag">#posta</a>
+                       <a href="#" class="tag">#pop apocaliptico</a>
+                       <a href="#" class="tag">#palermo</a>
+                   </div>
+
+               </div>
+               <div class="statDisco infoDisco col-md-4 col-lg-3">
+                   <h3>Estadísticas</h3>
+                   <table class="table">
+                        <tr>
+                            <td class="tdIcon text-center"><h5><i class="glyphicon glyphicon-play"></i></h5></td>
+                            <td class="tdText"><h5>Reproducciones</h5></td>
+                            <td class="tdNum"><h5>1m</h5></td>
+                        </tr>
+                       <tr>
+                            <td class="tdIcon text-center"><h5><i class="glyphicon glyphicon-cloud-download"></i></h5></td>
+                            <td class="tdText"><h5>Descargas</h5></td>
+                            <td class="tdNum"><h5>100k</h5></td>
+                        </tr>
+                       <tr>
+                            <td class="tdIcon text-center"><h5><i class="glyphicon glyphicon-heart"></i></h5></td>
+                            <td class="tdText"><h5>Favoritos</h5></td>
+                            <td class="tdNum"><h5>1,9k</h5></td>  
+                       </tr>
+                   </table>
+               
+               </div>
+               <div class="licDisco infoDisco col-md-7 col-lg-8">
+                   <h3>Licencia</h3>
+                       <p class="licTitl">Atribución – No Comercial – Compartir Igual (by-nc-sa)
+                           <i class="entypo cc"></i>
+                       <i class="entypo cc-by"></i>
+                       <i class="entypo cc-nc"></i>
+                       <i class="entypo cc-sa"></i>
+                       <i class="entypo cc-nd"></i></p>
+                       
+                   
+                   <p>Puedes copiar, distribuir, promocionar y tocar este álbum siempre y cuando tú:</p>
+                   <table class="table">
+                        <tr>
+                            <td class="licIcon"><h4><i class="entypo cc-by"></i></h4></td>
+                            <td class="licText"><h5>Menciones el nombre del artista.</h5></td>
+                        </tr>
+                       <tr>
+                            <td class="licIcon"><h4><i class="entypo cc-nc"></i></h4></td>
+                            <td class="licText"><h5>No utilices este álbum con fines comerciales.</h5></td>
+                        </tr>
+                       <tr>
+                            <td class="licIcon"><h4><i class="entypo cc-sa"></i></h4></td>
+                            <td class="licText"><h5>Distribuyas todas las obras derivadas de este álbum bajo la misma licencia CC.</h5></td>
+                        </tr>
+                        <tr>
+                            <td class="licIcon"><h4><i class="entypo cc-nd"></i></h4></td>
+                            <td class="licText"><h5>No alteres, transformes o crees obras derivadas, basados en este álbum.</h5></td>
+                        </tr>
+                       
+                       
+                       
+                   </table>
+                   <a href="#" class="pull-right" data-toggle="modal" data-target=".mozcu-modal-lg">Denunciar esta obra <i class="glyphicon glyphicon-warning-sign"></i></a>
+<!--            INICIO DEL MODAL DE MENSAJE DE DENUNCIA       -->
+                   
+                   <div class="modal fade mozcu-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                      <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                                <h4 class="modal-title" id="myModalLabel">Denuncia esta obra</h4>
+                              </div>
+                              <div class="modal-body">
+                                <input class="form-control" type="text" placeholder="Causa">
+                            <textarea class="form-control" rows="5" placeholder="Escribe tu denuncia"></textarea>
+                              </div>
+                              <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Cancelar</button>
+                                <button type="button" class="btn btn-success">Enviar</button>
+                              </div>
+                          
+                            
+                        </div>
+                      </div>
+                    </div>
+                   <!--           FIN DEL MODAL DE MENSAJE DE DENUNCIA       -->
+               
+               </div>
+           </div>
+      
+               
+        </div><!--FIN DE CONTENIDO-->       
+               
+    </div> <!-- FIN DE HOMEPAGE-->              
+               
+</div> <!-- FIN CONTAINER FLUID -->
+        
+            
+    
+
+
+     <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/docs.min.js"></script>
+      <script src="js/mozcu.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="La Re-evolución musical">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="images/favicon.png">
+
+    <title>Mozcu</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/entypo.css" rel="stylesheet">
+    <link href="css/mozcu.css" rel="stylesheet">
+    <link href="css/layout.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,300,700italic,700,400italic,300italic,100italic|Roboto+Slab:400,300,100,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/bar-ui.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="js/mozcu.js"></script>
+    <script type="text/javascript" src="js/soundmanager2.js"></script>
+    <script src="js/bar-ui.js"></script>
+    
+
+    <!-- Just for debugging purposes. Don't actually copy this line! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head> 
+<body>
+
+    <!-- +++++++++++++++++HEADER FIJO+++++++++++++++++++++++++++++ 
+    ===========================================================-->
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-header col-xs-2 col-sm-2 col-md-2 col-lg-2">   
+          <button type="button" data-toggle="offcanvas" class="logomin pull-left visible-xs visible-sm"><img src="images/logominB.jpg" alt="Mozcu"></button>  
+        <a class="navbar-brand pull-left visible-md visible-lg" href="#"><img src="images/logo.png" alt="Mozcu">  </a>  
+     </div> 
+        
+        <div class="col-xs-9 col-sm-9 col-md-6 col-lg-6 buscador">
+          <form class="navbar-form navbar-left navbarBuscador" role="search">
+          <div class="input-group">
+            <input type="text" class="form-control inputBuscador" placeholder="Busca artistas, amigos, álbums, canciones, etc. ">
+            <span class="input-group-btn"><button type="submit" class="btn btn-default"><i class="glyphicon glyphicon-search"></i></button></span>
+          </div>
+        </form> 
+        </div> 
+          
+        <div class="visible-lg visible-md">  
+            <ul class="nav navbar-nav navbar-right navCrearCuenta">
+                <li><a href="#">Ingresar</a></li>
+                <li><button class="btn btn-primary">Crear una cuenta</button></li>
+            </ul>
+        </div>
+        
+</nav>
+    
+<!--FIN DEL HEADER-->
+    
+
+<div id="wrapper" class="container">    
+    <!--+++++++++++++++++++++SIDEBAR++++++++++++++++++++++++++++++
+    ===========================================================-->    
+         <div id="sidebar-wrapper" class="col-xs-6 col-sm-6 col-md-2 col-lg-2 sidebar" role="navigation">
+            <ul class="nav nav-pills nav-pills-stacked nav-sidebar sidebar-nav ">
+                <li><a href="#"><i class="material-icons">account_circle</i><p>Ingresar</p></a></li>
+                <li><a href="#"><i class="material-icons">explore</i><p>Explorar</p></a></li>
+                <li><a href="#"><i class="material-icons">queue_music</i><p>Compilados</p></a></li>
+                <li><a href="#"><i class="material-icons">create</i><p>Reseñas</p></a></li>
+                <li><a href="#"><i class="material-icons">history</i><p>Historial</p></a></li>
+                
+                <li class="divider"></li>
+                <li class="visible-xs visible-sm menuPerfilXs"><a href="#"><i class="material-icons">settings</i><p>Ajustes de cuenta</p></a></li>
+                <li class="visible-xs visible-sm menuPerfilXs"><a href="#"><i class="material-icons">exit_to_app</i><p>Cerrar sesión</p></a></li>
+            </ul>
+             
+        </div>
+        
+      
+
+    <!--FIN DEL SIDEBAR-->
+    
+    <!-- INICIO DEL REPRODUCTOR RESPONSIVE -->
+
+<div class="sm2-bar-ui full-width fixed flat dark-text">
+
+ <div class="bd sm2-main-controls">
+
+  <div class="sm2-inline-texture"></div>
+  <div class="sm2-inline-gradient"></div>
+     
+  <div class="sm2-inline-element sm2-button-element">
+    <div class="sm2-button-bd">
+        <a href="#prev" title="Previous" class="sm2-inline-button previous">&lt; previous</a>
+    </div>
+  </div>
+
+  <div class="sm2-inline-element sm2-button-element">
+   <div class="sm2-button-bd">
+    <a href="#play" class="sm2-inline-button play-pause">Play / pause</a>
+   </div>
+  </div>
+     
+     <div class="sm2-inline-element sm2-button-element">
+        <div class="sm2-button-bd">
+            <a href="#next" title="Next" class="sm2-inline-button next">&gt; next</a>
+        </div>
+    </div> 
+
+  <div class="sm2-inline-element sm2-inline-status">
+
+   <div class="sm2-playlist">
+    <div class="sm2-playlist-target">
+     <!-- playlist <ul> + <li> markup will be injected here -->
+     <!-- if you want default / non-JS content, you can put that here. -->
+     <noscript><p>JavaScript is required.</p></noscript>
+    </div>
+   </div>
+
+   <div class="sm2-progress">
+    <div class="sm2-row">
+    <div class="sm2-inline-time">0:00</div>
+     <div class="sm2-progress-bd">
+      <div class="sm2-progress-track">
+       <div class="sm2-progress-bar"></div>
+       <div class="sm2-progress-ball"><div class="icon-overlay"></div></div>
+      </div>
+     </div>
+     <div class="sm2-inline-duration">0:00</div>
+    </div>
+   </div>
+
+  </div>
+
+  <div class="sm2-inline-element sm2-button-element sm2-volume hidden-xs hidden-sm">
+   <div class="sm2-button-bd">
+    <span class="sm2-inline-button sm2-volume-control volume-shade"></span>
+    <a href="#volume" class="sm2-inline-button sm2-volume-control">volume</a>
+   </div>
+  </div>
+
+<!-- not implemented -->
+<!--
+  <div class="sm2-inline-element sm2-button-element">
+   <div class="sm2-button-bd">
+    <a href="#repeat" title="Repeat playlist" class="sm2-inline-button repeat">&infin; repeat</a>
+   </div>
+  </div>
+
+
+  
+  
+  <div class="sm2-inline-element sm2-button-element hidden-xs hidden-sm">
+   <div class="sm2-button-bd">
+    <a href="#shuffle" title="Shuffle" class="sm2-inline-button shuffle">shuffle</a>
+   </div>
+  </div>
+-->  
+
+  <div class="sm2-inline-element sm2-button-element sm2-menu">
+   <div class="sm2-button-bd">
+    <a href="#menu" class="sm2-inline-button menu">menu</a>
+   </div>
+  </div>
+
+ </div>
+<div id="playListWrapperBg"></div>    
+ <div class="bd sm2-playlist-drawer sm2-element playListWrapper">
+
+  <div class="sm2-inline-texture">
+   <div class="sm2-box-shadow"></div>
+  </div>
+
+  <!-- playlist content is mirrored here -->
+
+  <div class="sm2-playlist-wrapper playList">
+<!--      INICIO HEADER PARA MOVILES-->
+      
+      <div class="row visible-xs visible-sm playerDiscoMobile">
+              <div class="col-xs-4 col-sm-3 col-xs-offset-1 col-sm-offset-1">
+                <img class="img-responsive" src="images/dorado.jpg">
+              </div>
+              <div class="col-xs-7 col-sm-8">
+                <a href="#"><h4>Dorado</h4></a>
+                  <a href="#">Como Diamantes Telepaticos</a>
+                  <div class="row favDiscoMobile">
+                    <div class="btn-group btn-group-player">
+                      <button type="button" id="favPlayer" class="btn btn-default"><i class="material-icons iconPlayer">favorite</i></button>
+                      <button type="button" class="btn btn-default"><i class="material-icons iconPlayer">share</i></button>
+                      <div class="btn-group">
+                        <button type="button" class="btn btn-default dropdown-toggle"
+                                data-toggle="dropdown"><i class="material-icons iconPlayer">more_vert</i></i>
+                        </button>
+                            <ul class="dropdown-menu" role="menu">
+                            <li><a href="#"><i class="material-icons pull-left iconPlayerDropdown">code</i>Embed</a></li>
+                            <li><a href="#"><i class="material-icons pull-left iconPlayerDropdown">send</i>Enviar</a></li>
+                            <li><a href="#"><i class="material-icons pull-left iconPlayerDropdown">cloud_download</i>Descargar</a></li>
+                            </ul>
+                      </div>
+                </div>
+              </div>
+              </div>
+              
+          </div>
+<!--      FIN HEADER PARA MOVILES-->
+<!--        INICIO HEADER TAMAÑO NORMAL-->
+      
+       <div class="row headerPlayer visible-md visible-lg">
+           <div class="col-lg-5 col-lg-offset-1 col-md-6 ">
+            <h3 class="titlAlbumPlayer"><a href="#">Dorado</a></h3>
+               <h5><a href="#">Como Diamantes Telepaticos</a></h5>
+           </div>
+           <div class="col-lg-5 col-md-6">
+               <div class="btn-group pull-right btn-group-player">
+                  <button type="button" id="btnFavPlayer" class="btn btn-default"><i id="favPlayer" class="material-icons iconPlayer">favorite</i></button>
+                  <button type="button" class="btn btn-default"><i class="material-icons iconPlayer">share</i></button>
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-default dropdown-toggle"
+                            data-toggle="dropdown"><i class="material-icons iconPlayer">more_vert</i></i>
+                    </button>
+                        <ul class="dropdown-menu" role="menu">
+                        <li><a href="#"><i class="material-icons pull-left iconPlayerDropdown">code</i>Embed</a></li>
+                        <li><a href="#"><i class="material-icons pull-left iconPlayerDropdown">send</i>Enviar</a></li>
+                        <li><a href="#"><i class="material-icons pull-left iconPlayerDropdown">cloud_download</i>Descargar</a></li>
+                        </ul>
+                  </div>
+                </div>
+           </div>
+      
+      </div>
+    <!--        fin HEADER TAMAÑO NORMAL-->
+      <div class="row">
+          <div class="col-lg-4 col-lg-offset-1 col-md-4 albumPlay hidden-xs hidden-sm">
+              <img class="albumPlayImg img-responsive" src="images/dorado.jpg">
+              <i id="favPlayer2" class="material-icons">favorite</i>
+          
+          </div>
+          
+        
+<!--      CONTENEDOR DE TEMAS Y LISTA DE REPRODUCCIÓN-->
+<!--      NOMBRE DE BANDA Y ÁLBUM-->
+      <div class="col-lg-6 col-md-8 col-xs-12 col-sm-12">
+      
+<!--INICIO LISTA DE TEMAS                -->
+         <div class="tablaPlayerWrapper"> 
+          
+                <table class="table tablaPlayer sm2-playlist-bd">
+
+                    <tbody>
+                        <tr>
+                            <td class="text-center">1</td>
+                            <td class="nombreTabla"><a href="mp3/Los%20Prisioneros%20-%20Paramar.mp3">Paramar</a></td>
+                            
+                            <td class="text-right">5:33</td>
+                        </tr>
+                        
+                         <tr>
+                            <td class="text-center">2</td>
+                            <td class="nombreTabla"><a href="mp3/01.%20Ella%20Vendra.mp3">Ella Vendrá</a></td>
+                             
+                            <td class="text-right">3:35</td>
+                        </tr>
+                        
+                        <tr>
+                            <td class="text-center">3</td>
+                            <td class="nombreTabla"><a href="mp3/07%20Videos%20+%20Discos.mp3">Videos + Discos</a></td>
+                            
+                            <td class="text-right">3:45</td>
+                        </tr>
+                        
+                        <tr>
+                            <td class="text-center">4</td>
+                            <td class="nombreTabla"><a href="mp3/Charlie%20Rich%20-%20Lonely%20Weekends.mp3">Lonely Weekends</a></td>
+                            
+                            <td class="text-right">6:45</td>
+                        </tr>
+                        
+                        <tr>
+                            <td class="text-center">5</td>
+                            <td class="nombreTabla"><a href="mp3/08%20Foto%20-%20Rom%C3%A1ntico.mp3">Foto Romantico</a></td>
+                            
+                            <td class="text-right">4:23</td>
+                        </tr>
+                        
+                        <tr>
+                            <td class="text-center">6</td>
+                            <td class="nombreTabla"><a href="mp3/09%20Estaciones.mp3">Estaciones</a></td>
+                            
+                            <td class="text-right">3:21</td>
+                        </tr>
+                        
+                        <tr>
+                            <td class="text-center">7</td>
+                            <td class="nombreTabla"><a href="mp3/03%20Tu%20estilo%20es%20un%20Free%20Pass.mp3">Tu estilo es un Free Pass</a></td>
+                            
+                            <td class="text-right">4:56</td>
+                        </tr>
+                        
+                        <tr>
+                            <td class="text-center">8</td>
+                            <td class="nombreTabla"><a href="mp3/Los%20Prisioneros%20-%20Estrechez%20De%20Coraz%C3%B3n.mp3">Estrechez de corazón</a></td>
+                            
+                            <td class="text-right">0:45</td>
+                        </tr>
+                        
+                        <tr>
+                            <td class="text-center">9</td>
+                            <td class="nombreTabla"><a href="mp3/Soda%20Stereo%20-%20Primavera%200%20-%20Remasterizado%202007.mp3">Primavera 0</a></td>
+                            
+                            <td class="text-right">4:55</td>
+                        </tr>
+                        
+                        <tr>
+                            <td class="text-center">10</td>
+                            <td class="nombreTabla"><a href="mp3/Los%20Prisioneros%20-%20We%20Are%20Sudamerican%20Rockers.mp3">We Are Sudamerican Rockers</a></td>
+                            
+                            <td class="text-right">1:26</td>
+                        </tr>
+                        
+                        <tr>
+                            <td class="text-center">11</td>
+                            <td class="nombreTabla"><a href="mp3/Los%20Prisioneros%20-%20Tren%20Al%20Sur.mp3">Tren al Sur</a></td>
+                            
+                            <td class="text-right">2:06</td>
+                        </tr>
+                        
+                        <tr>
+                            <td class="text-center">12</td>
+                            <td class="nombreTabla"><a href="mp3/Los%20Prisioneros%20-%20Por%20Qu%C3%A9%20No%20Se%20Van.mp3">Por qué no se van</a></td>
+                            
+                            <td class="text-right">12:59</td>
+                        </tr>
+                        
+                        
+                    </tbody>
+                    
+                
+                </table>
+          
+          </div>
+        
+      </div>
+    </div>
+          
+      
+  
+  </div>
+
+ </div>
+
+</div>
+    
+    <!--+++++++++++++++++++++COMIENZO DEL CONTENEDOR+++++++++++++++++++
+    ===================================================================-->
+ 
+    <div class="contenedorDash col-xs-12 col-sm-12 col-md-offset-2 col-md-10 col-lg-offset-2 col-lg-10">
+        <div id="preloader"><P id="loader" class="text-center">Loading...</P></div>
+           
+<!--INICIO DE Contenido DE REPRODUCCIÓN-->
+           
+           <!--           INICIO COVERFLOW-->
+        <div class="row demo">
+            <h4 class="tituloDashboard"><i class="material-icons">hearing</i>Sigue escuchando</h4>
+            <div class="wrapper coverflow ui-coverflow">
+                <img class="imgCoverflow" src="images/viva.jpg" data-artist="Viva Elastico" data-album="Viva Elastico"/>
+                <img class="imgCoverflow" src="images/losreyes.jpg" data-artist="Los Reyes del Falsete" data-album="Dias Nuestros"/>
+                <img class="imgCoverflow" src="images/gran.jpg" data-artist="El Mato a un Policia Motorizado" data-album="La Dinastía Scorpio"/>
+                <img class="imgCoverflow" src="images/dorado.jpg" data-artist="Como Diamantes Telepaticos" data-album="Dorado"/>
+                <img class="imgCoverflow" src="images/sol.jpg" data-artist="Sol Marianela" data-album="Hasta Siempre."/>
+                <img class="imgCoverflow" src="images/valentin.jpg" data-artist="Los Reyes del Falsete" data-album="Dias Nuestros"/>
+                <img class="imgCoverflow" src="images/valentin2.JPG" data-artist="Viva Elastico" data-album="Viva Elastico"/>
+                <img class="imgCoverflow" src="images/losreyes2.jpg" data-artist="Los Reyes del Falsete" data-album="Dias Nuestros"/>
+                <img class="imgCoverflow" src="images/hojas.jpg" data-artist="The Hojas Secas" data-album="Dias Nuestros"/>
+                    
+
+            </div>
+		  
+        </div>      
+<!--           FIN COVERFLOW-->
+<!--           INICIO DE DESTACADAS EN TU RED-->
+           <div class="row">
+               <h4 class="tituloDashboard"><i class="material-icons">whatshot</i>Álbumes destacados en tu red</h4>
+               <div class="col-lg-12 contenedorAlbumsDash">
+                    
+                   <div class="album albumDashboard col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                      <a href="#"><img src="images/dorado.jpg" alt="dorado" class="imgAlbum"></a>
+                      <h5>Dorado</h5>
+                       <a href="#"><p>Como Diamantes Telepáticos</p></a>
+                   </div>
+                   
+                   <div class="album albumDashboard col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                      <a href="#"><img src="images/viva.jpg" alt="dorado" class="imgAlbum"></a>
+                      <h5>Viva Elastico</h5>
+                       <a href="#"><p>Viva Elastico</p></a>
+                   </div>
+                   
+                   <div class="album albumDashboard col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                      <a href="#"><img src="images/losreyes.jpg" alt="dorado" class="imgAlbum"></a>
+                      <h5>Dias Nuestros</h5>
+                       <a href="#"><p>Los Reyes del Falsete</p></a>
+                   </div>
+                   
+                   <div class="album albumDashboard col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                      <a href="#"><img src="images/sol.jpg" alt="dorado" class="imgAlbum"></a>
+                      <h5>Hasta Siempre.</h5>
+                       <a href="#"><p>Sol MArianela</p></a>
+                   </div>
+                   
+                   <div class="album albumDashboard col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                      <a href="#"><img src="images/gran.jpg" alt="dorado" class="imgAlbum"></a>
+                      <h5>La Gran Perdida De Energía</h5>
+                       <a href="#"><p>La Gran Perdida De Energía</p></a>
+                   </div>
+                   
+                   <div class="album albumDashboard col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                      <a href="#"><img src="images/losreyes2.jpg" alt="dorado" class="imgAlbum"></a>
+                      <h5>La Fiesta De La Forma</h5>
+                       <a href="#"><p>Los Reyes Del Falsete</p></a>
+                   </div>
+                   
+                   <div class="album albumDashboard col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                      <a href="#"><img src="images/valentin.jpg" alt="dorado" class="imgAlbum"></a>
+                      <h5>Todos Los Sabados Del Mundo</h5>
+                       <a href="#"><p>Valentin y Los Volcanes</p></a>
+                   </div>
+                   
+                   <div class="album albumDashboard col-xs-6 col-sm-4 col-md-3 col-lg-3">
+                      <a href="#"><img src="images/valentin2.JPG" alt="dorado" class="imgAlbum"></a>
+                      <h5>Play Al Viejo Walkman Blanco</h5>
+                       <a href="#"><p>Valentin Y Los Volcanes</p></a>
+                   </div>
+               </div>
+               
+        
+           </div>
+           
+<!--           FIN DE DESTACADAS EN TU RED-->
+<!--           INICIO DE MÁS USUARIOS A LOS QUE SEGUIR-->
+           <div class="row">
+               <h4 class="tituloDashboard"><i class="material-icons">people</i>Más usuarios a los que seguir</h4>
+               <div class="col-lg-12 contenedorUserDash">
+                    
+                   <div class="userDashboard col-xs-4 col-sm-4 col-md-4 col-lg-2">
+                      <a href="#"><img src="images/hojas.jpg" alt="dorado" class="img-responsive img-circle"></a>
+                       <button type="button" class="btn btn-success btnFollowDash center-block"><i class="material-icons">person_add</i></button>
+                       <a href="#"><p class="text-center">Chingolo Records</p></a>
+        
+                   </div>
+                   
+                   <div class="userDashboard col-xs-4 col-sm-4 col-md-4 col-lg-2">
+                      <a href="#"><img src="images/valentin.jpg" alt="dorado" class="img-responsive img-circle"></a>
+                       <button type="button" class="btn btn-success btnFollowDash center-block"><i class="material-icons">person_add</i></button>
+                       <a href="#"><p class="text-center">Triple RRR Discos</p></a>
+                
+                   </div>
+                   
+                   <div class="userDashboard col-xs-4 col-sm-4 col-md-4 col-lg-2">
+                      <a href="#"><img src="images/viva.jpg" alt="dorado" class="img-responsive img-circle"></a>
+                       <button type="button" class="btn btn-success btnFollowDash center-block"><i class="material-icons">person_add</i></button>
+                       <a href="#"><p class="text-center">El Mato a un Policia Motorizado</p></a>
+            
+                   </div>
+                   
+                   <div class="userDashboard col-xs-4 col-sm-4 col-md-4 col-lg-2">
+                      <a href="#"><img src="images/sol.jpg" alt="dorado" class="img-responsive img-circle"></a>
+                       <button type="button" class="btn btn-success btnFollowDash center-block"><i class="material-icons">person_add</i></button>
+                       <a href="#"><p class="text-center">Sol Marianela</p></a>
+                       
+                   </div>
+                   
+                   <div class="userDashboard col-xs-4 col-sm-4 col-md-4 col-lg-2">
+                      <a href="#"><img src="images/losreyes.jpg" alt="dorado" class="img-responsive img-circle"></a>
+                       <button type="button" class="btn btn-success btnFollowDash center-block"><i class="material-icons">person_add</i></button>
+                       <a href="#"><p class="text-center">Los Reyes del Falsete</p></a>
+                       
+                   </div>
+                   
+                   <div class="userDashboard col-xs-4 col-sm-4 col-md-4 col-lg-2">
+                      <a href="#"><img src="images/sol.jpg" alt="dorado" class="img-responsive img-circle"></a>
+                       <button type="button" class="btn btn-success btnFollowDash center-block"><i class="material-icons">person_add</i></button>
+                       <a href="#"><p class="text-center">Sol Marianela</p></a>
+                       
+                   </div>
+                   
+                   
+               </div>
+        
+           </div>
+           
+<!--           FIN DE MÁS USUARIOS A LOS QUE SEGUIR-->    
+<!--           INICIO DE NO SABES UQE REPRODUCIR?-->
+        <div class="row nosabesDash">
+            <p class="text-center">¿No sabes qué reproducir?</p>
+            <a href="#"><p class="text-center">Dejanos sorprenderte. <i class="material-icons">play_circle_outline</i></p></a>
+        </div>
+            
+               
+        </div><!--FIN DE CONTENIDO-->       
+                            
+               
+</div> <!-- FIN CONTAINER FLUID -->
+        
+            
+    
+
+
+     <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+   <script src="js/jquery-ui.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/debounce.js"></script>
+    <script src="js/coverflow.min.js"></script>
+    <script src="js/support.core.js"></script>
+    <script src="js/support.transform3d.js"></script>
+    <script src="js/renderer.3d.js"></script>
+    <script src="js/renderer.classic.js"></script>
+    <script src="js/coverflow.js"></script>
+    <script>
+        var $el = $( '.coverflow' ).coverflow({
+            active : 3
+        });
+
+        $( window ).resize( debounce( function() {
+        $el.coverflow();
+    }, 20, true ));
+
+    </script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/docs.min.js"></script>
+    <script src="js/mozcu.js"></script>
+    
+      
+
+</body>
+</html>
