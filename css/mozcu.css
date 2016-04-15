@@ -721,12 +721,10 @@ body{
     opacity: 0.8;
 }
 .album > h5{
-    margin-top: 5px;
     margin-bottom: 2px;
     color: #111;
     font-size: 15px;
     text-overflow: ellipsis;
-    line-height: 20px;
     word-wrap: break-word;
     white-space: nowrap;
     overflow: hidden;
@@ -736,7 +734,6 @@ body{
     font-size: 12px;
     text-overflow: ellipsis;
     overflow: hidden;
-    line-height: 20px;
     word-wrap: break-word;
     white-space: nowrap;
 
@@ -938,7 +935,7 @@ body{
 /*INICIO DE ALBUMES*/
 
 .headerAlbumes{
-    margin-bottom: 25px;
+    /*margin-bottom: 25px;*/
     margin-top: 0px;
     margin-left: 0px;
     padding-left: 0px;
@@ -1001,9 +998,9 @@ body{
 }
 
 @media (min-width: 1201px) and (max-width: 1400px){
-    .album{
+    /*.album{
         height:300px;
-    }
+    }*/
 
     .album.manager {
         height:330px;
@@ -1012,9 +1009,9 @@ body{
 
 
 @media (min-width: 1500px){
-    .album{
+    /*.album{
         height: 450px;
-    }
+    }*/
 
     .album.manager {
         height:470px;
@@ -1022,7 +1019,6 @@ body{
 
     .album > h5{
         font-size:1em;
-        margin-top:15px;
     }
     .album > a> p{
         font-size:0.9em;
@@ -1131,6 +1127,31 @@ body{
 }
 
 /*FIN ALBUM MANAGER*/
+
+/*INICIO FAVORITOS*/
+
+.btnFavoritos{
+  margin-left: 15px;
+}
+
+.form-filtro{
+  border-radius: 15px;
+  font-size: 12px;
+}
+
+.btnPlaylist{
+  border: none;
+  background: transparent;
+  vertical-align: inherit;
+}
+
+.btnPlaylist > i{
+  color: #555;
+-webkit-transition: color 0.5s;
+transition: color 0.5s;
+}
+
+/*FIN DE FAVORITOS*/
 
 /*INICIO COMPILADOS*/
 
@@ -1975,6 +1996,7 @@ margin-left: 15px;}
 
 .compiTable{
     vertical-align: middle;
+    width: 100px;
 
 }
 .tdImg{
