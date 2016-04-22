@@ -2195,3 +2195,22 @@ margin-left: 15px;}
    margin-bottom: 40px;
    margin-top: 20px;
 }
+
+/*+++++++++++++++++++++++++++++++++FIN Acerca de mozcu+++++++++++++++++++
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+/*+++++++++++++++++++++++++++++++++INICIO donaciones+++++++++++++++++++
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+.headerDonaciones{
+  margin-bottom: 40px;
+}
+
+.headerDonaciones > h1{
+  font-size: 25px;
+}
+
+.donaciones{
+    background: #EEE;
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid #CCC;
+}
