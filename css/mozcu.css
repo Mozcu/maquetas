@@ -1462,6 +1462,7 @@ transition: color 0.5s;
 .caract-model>p{
     padding-left: 45px;
     padding-right: 25px;
+    display: table-row-group;
 }
 .caract-model>h4{
      padding-left: 45px;
@@ -1470,7 +1471,12 @@ transition: color 0.5s;
 
 .img-caract{
     margin-bottom: 10px;
+    max-width: 150px;
+    margin-right: 30px;
 
+}
+.hidde{
+  display: none;
 }
 
 @media (max-width: 768px) {
@@ -2205,12 +2211,11 @@ margin-left: 15px;}
 }
 
 .headerDonaciones > h1{
-  font-size: 25px;
 }
 
 .donaciones{
-    background: #EEE;
+    /*background: #EEE;
     padding: 15px;
     border-radius: 8px;
-    border: 1px solid #CCC;
+    border: 1px solid #CCC;*/
 }
