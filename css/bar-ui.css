@@ -98,7 +98,8 @@
 .sm2-bar-ui .bd,
 .sm2-bar-ui .sm2-extra-controls {
  position: relative;
- background-color: #2288cc;
+ background-color: #EEEEEE;
+ border-top: 1px solid #ccc;
  /*
  transition: background 0.2s ease-in-out;
  */
@@ -207,15 +208,15 @@
 
 .sm2-bar-ui.dark-text .sm2-inline-button {
  /* Warning/disclaimer: SVG might be fuzzy when inverted on Chrome, losing resolution on hi-DPI displays. */
- -webkit-filter: invert(1);
+ /*-webkit-filter: invert(1);*/
  /* SVG-based invert filter for Firefox */
- filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'invert\'><feColorMatrix in='SourceGraphic' type='matrix' values='-1 0 0 0 1 0 -1 0 0 1 0 0 -1 0 1 0 0 0 1 0'/></filter></svg>#invert");
+ /*filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'invert\'><feColorMatrix in='SourceGraphic' type='matrix' values='-1 0 0 0 1 0 -1 0 0 1 0 0 -1 0 1 0 0 0 1 0'/></filter></svg>#invert");*/
  /* IE 8 inverse filter, may only match pure black/white */
  /* filter: xray; */
  /* pending W3 standard */
- filter: invert(1);
+ /*filter: invert(1);*/
  /* not you, IE < 10. */
- filter: none\9;
+ /*filter: none\9;*/
 }
 
 .sm2-bar-ui .bd a {
@@ -524,22 +525,22 @@
 .play-pause,
 .play-pause:hover,
 .paused .play-pause:hover {
- background-image: url(../images/icomoon/entypo-25px-ffffff/PNG/play.png);
- background-image: none, url(../images/icomoon/entypo-25px-ffffff/SVG/play.svg);
+ background-image: url(../images/iconos/png/ic_play_arrow_black_24dp_2x.png);
+ background-image: none, url(../images/iconos/svg/ic_play_arrow_black_24px.svg);
  background-size: 67.5%;
  background-position: 40% 53%;
 }
 
 .playing .play-pause {
- background-image: url(../images/icomoon/entypo-25px-ffffff/PNG/pause.png);
- background-image: none, url(../images/icomoon/entypo-25px-ffffff/SVG/pause.svg);
+ background-image: url(../images/iconos/png/ic_pause_black_24dp_2x.png);
+ background-image: none, url(../images/iconos/svg/ic_pause_black_24px.svg);
  background-size: 57.6%;
  background-position: 50% 53%;
 }
 
 .sm2-volume-control {
- background-image: url(../images/icomoon/entypo-25px-ffffff/PNG/volume.png);
- background-image: none, url(../images/icomoon/entypo-25px-ffffff/SVG/volume.svg);
+ background-image: url(../images/icomoon/entypo-25px-000000/PNG/volume.png);
+ background-image: none, url(../images/icomoon/entypo-25px-000000/SVG/volume.svg);
 }
 
 .sm2-volume-control,
@@ -552,30 +553,30 @@
  filter: alpha(opacity=33); /* <= IE 8 */
  opacity: 0.33;
 /* -webkit-filter: invert(1);*/
- background-image: url(../images/icomoon/entypo-25px-000000/PNG/volume.png);
- background-image: none, url(../images/icomoon/entypo-25px-000000/SVG/volume.svg);
+ background-image: url(../images/icomoon/entypo-25px-ffffff/PNG/volume.png);
+ background-image: none, url(../images/icomoon/entypo-25px-ffffff/SVG/volume.svg);
 }
 
 .menu {
- background-image: url(../images/icomoon/entypo-25px-ffffff/PNG/list2.png);
- background-image: none, url(../images/icomoon/entypo-25px-ffffff/SVG/list2.svg);
+ background-image: url(../images/iconos/png/ic_queue_music_black_24dp_2x.png);
+ background-image: none, url(../images/iconos/svg/ic_queue_music_black_24px.svg);
  background-size: 58%;
  background-position: 54% 51%;
 }
 
 .previous {
- background-image: url(../images/icomoon/entypo-25px-ffffff/PNG/first.png);
- background-image: none, url(../images/icomoon/entypo-25px-ffffff/SVG/first.svg);
+ background-image: url(../images/iconos/png/ic_skip_previous_black_24dp_2x.png);
+ background-image: none, url(../images/iconos/svg/ic_skip_previous_black_24px.svg);
 }
 
 .next {
- background-image: url(../images/icomoon/entypo-25px-ffffff/PNG/last.png);
- background-image: none, url(../images/icomoon/entypo-25px-ffffff/SVG/last.svg);
+ background-image: url(../images/iconos/png/ic_skip_next_black_24dp_2x.png);
+ background-image: none, url(../images/iconos/svg/ic_skip_next_black_24px.svg);
 }
 
 .previous,
 .next {
- background-size: 49.5%;
+ background-size: 58%;
  background-position: 50% 50%;
 }
 
@@ -593,9 +594,9 @@
 }
 
 .repeat {
- background-image: url(../images/icomoon/entypo-25px-ffffff/PNG/loop.png);
- background-image: none, url(../images/icomoon/entypo-25px-ffffff/SVG/loop.svg);
- background-position: 50% 43%;
+ background-image: url(../images/iconos/png/ic_repeat_black_24dp_2x.png);
+ background-image: none, url(../images/iconos/svg/ic_repeat_black_24px.svg);
+ background-position: 50% 50%;
  background-size: 54%;
 }
 
